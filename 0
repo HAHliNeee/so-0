@@ -1,0 +1,25 @@
+//just finding the area of the rectangle
+#include <iostream>
+using namespace std;
+class Figure {
+private:
+    int width;
+    int height;
+public:
+        void setData(int width1, int height1)
+        { 
+          width = width1;
+          height = height1;
+        }
+    int getWidth() { return width; };
+    int getHeight() { return height; };
+};
+int main ()
+{
+    Figure f;
+    int width, height;
+    cin >> width >> height;
+    f.setData(width, height);
+    cout <<"Площадь: "<< f.getWidth() * f.getHeight() << endl;
+    return 0;
+}
